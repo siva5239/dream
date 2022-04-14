@@ -1,0 +1,32 @@
+
+
+  
+  <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let dreamCather  of dreamCatchers ">
+        <mat-card class="mat-elevation-z4">
+          <mat-card-header>
+            <mat-card-title></mat-card-title>
+          </mat-card-header>
+          <img mat-card-image class="card-image" src= {{dreamCather.imagepath}} >
+         
+          <mat-card-content>
+            <p>
+              {{dreamCather.cost}}
+            </p>
+            <p>
+             Delivered Date :{{dreamCather.dilevaryDate}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="primary" (click)="postDreamCaptureOrder(dreamCather.id)">Order</button>
+            <button mat-button color="raised">Like </button>
+          </mat-card-actions>
+      
+        </mat-card>
+      </div>
+    </div>
+    
+  
+  </div>
+  <router-outlet></router-outlet>

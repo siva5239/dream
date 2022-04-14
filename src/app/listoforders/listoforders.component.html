@@ -1,0 +1,15 @@
+<h2 class="mainheader">You can see your list of orders here</h2>
+<div class="imagecss" *ngFor = "let orderedDreamcapture of orderedDreamcaptureList" >
+    <img mat-card-image src= {{orderedDreamcapture.imagepath}}>
+    <mat-card-content>
+        <p>
+        Price of the dream capture is: {{orderedDreamcapture.cost}}
+        </p>
+        <p>
+         Delivered Date is:{{orderedDreamcapture.dilevaryDate}}
+        </p>
+      </mat-card-content>
+      
+     <button (click)="deleteOrderedDreamCapture(orderedDreamcapture.id)" class="btn btn-danger">delete</button> 
+   </div>
+  

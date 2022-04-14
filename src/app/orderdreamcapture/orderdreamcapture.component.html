@@ -1,0 +1,19 @@
+
+
+    <form (ngSubmit)="postDreamCaptureOrder()">
+       <div class="imagecss" >
+        <img mat-card-image src= {{dreamCather.imagepath}}>
+        <mat-card-content>
+            <p>
+            Price of the dream capture is: {{dreamCather.cost}}
+            </p>
+            <p>
+             Delivered Date is:{{dreamCather.dilevaryDate}}
+            </p>
+          </mat-card-content>
+          
+          <button type="submit" class="btn btn-success" >Submit</button>
+       </div>
+      
+    </form>
+ 

@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  
+  
+    <span class="dream">Dream</span>
+    <span><img class = "img-responsive" src=".././assets/catch.jpg"></span>
+    <div class="spacer" >
+      <a mat-button  routerLink = "home" >Home </a>
+      <a mat-button routerLink = "about" >About Us</a>
+      <a mat-button routerLink = "contact" >Contact Us</a>
+      <a mat-button routerLink = "orderedlist" >List of Orders</a>
+      
+    </div>
+    <div class="spacer1">
+      <a mat-button  routerLink = "admin" ><mat-icon>admin_panel_settings</mat-icon>Admin</a>
+      <a mat-raised-button color = "accent" (click)="logout()" >logout</a>
+    
+    </div>
+    
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  <footer class="footer" style="text-align: center ; color: red; padding: 30px 0px 0px 0px;">
+    <div class="container">
+        <span>All Rights Reserved 2022 @Sravani Julapally</span>
+    </div>
+  </footer>

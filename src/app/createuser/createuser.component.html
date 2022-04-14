@@ -1,0 +1,44 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>
+                      Sign Up
+                    </h1>
+                    <h6>
+                      Register Yourself
+                    </h6>
+                </div>
+            
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()" autocomplete="off">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Enter You Fullname</label>
+                            <input type="text" formControlName = "fullName" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Enter your Phone number</label>
+                            <input type="text" formControlName = "phoneNumber" class="form-control" id="exampleInputPassword1">
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Enter your Email</label>
+                          <input type="email" class="form-control" formControlName = "email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" formControlName = "fullName" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" formControlName = "password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="space">
+                        <button type="submit" class="btn btn-primary" >Register</button>
+                        </div>
+                    </form>
+                    <div class="space1">
+                    <a routerLink = '/login' style="color: #fff;" >Already registered? click here to login</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
