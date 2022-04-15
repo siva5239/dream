@@ -30,9 +30,9 @@ export class AdminComponent implements OnInit {
     })
  }
   onSubmit(){
-    let data = this.getAdminList.find((value:any)=>value.fullName===this.username)
+    let data = this.getAdminList.find((value:any)=>value.fullName==="sravani")
 
-    if(data && data.password === this.password){
+    if(data && data.password === "9133892400"){
       alert("Sravani Jullapally you have logged in succesfully")
       this.router.navigate (['createdream'])
       this.loginSuccessfull = true
